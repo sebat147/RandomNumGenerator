@@ -59,6 +59,8 @@
         android:id="@+id/txtnum"
         android:layout_width="343dp"
         android:layout_height="187dp"
+        android:clickable="true"
+        android:editable="false"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Aquí aparecerán tus números generados"
@@ -87,19 +89,37 @@
 
     <EditText
         android:id="@+id/txtVal0"
-        android:layout_width="239dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="29dp"
+        android:layout_width="191dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:layout_marginBottom="24dp"
         android:ems="10"
         android:hint="Ingrese el valor inicial aquí"
         android:inputType="numberDecimal"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btngenerar"
+        app:layout_constraintEnd_toEndOf="@+id/txtVal2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/txtVal2"
+        android:layout_width="179dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Ingrese el segundo valor aquí"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btngenerar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
